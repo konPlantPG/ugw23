@@ -3,6 +3,7 @@ import os
 
 
 st.write("# 2023第3回GW旅程")
+st.write("スマホの人は左上の「>」でサイドバー表示")
 
 pagelist = ["スケジュール", "食べ物", "観光地", "宿泊場所"]
 selector=st.sidebar.radio( "ページ選択",pagelist)
@@ -153,6 +154,8 @@ elif selector=='観光地':
         st.write("こんな感じ")
         st.image(home+"//images//kanko3.png", use_column_width=True)
 
+    st.write("---")
+
     link = '[②桔梗信玄餅 工場テーマパーク](https://goo.gl/maps/VFt1nKfpgQ2ADa3CA)'
     st.markdown(link, unsafe_allow_html=True)
     st.write('信玄餅の工場')
@@ -168,6 +171,8 @@ elif selector=='観光地':
     with col12:
         st.write("お土産")
         st.image(home+"//images//moti3.png", use_column_width=True)
+
+    st.write("---")
 
     link = '[②富士スピードウェイ&モータースポーツミュージアム](https://goo.gl/maps/JmaJMM6wYowSaM8i6)'
     st.markdown(link, unsafe_allow_html=True)
