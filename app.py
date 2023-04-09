@@ -3,7 +3,7 @@ import os
 
 
 st.write("# 2023第3回GW旅程")
-st.write("スマホの人は左上の「>」でサイドバー表示")
+
 
 pagelist = ["スケジュール", "食べ物", "観光地", "宿泊場所"]
 selector=st.sidebar.radio( "ページ選択",pagelist)
@@ -11,6 +11,7 @@ selector=st.sidebar.radio( "ページ選択",pagelist)
 home = os.getcwd()
 
 if selector == "スケジュール":
+    st.write("スマホの人は左上の「>」でサイドバー表示")
     st.write("決めてないけどそれっぽく書く")
     st.write("### 1日目")
 
